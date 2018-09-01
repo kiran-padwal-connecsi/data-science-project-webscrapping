@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>
+        1.) file name = schedule_coin_market_cap_minute.py
+        <br/>
+        description = This file is a scheduler file which calls the get_minute_data every <b style="color:red">5 minute</b> method from the coinmarketcap Controller
+        and gets the data and cleans it and inserts data into coin_price_minute table
+        <br/><br/>
+
+        2.) file name = scheduler_cmc_daily_data.py
+        <br/>
+        description = This file is a scheduler file which calls the get_daily_data method every day at <b style="color:red">15:00 only once</b>
+        and get the daily data from coinmarketcap.com and inserts the data into coin_price_daily table
+        <br/><br/>
+        3.) file name = temp_hist_daily_scheduler.py
+        <br/>
+        description = This is a scheduler file which calls the history method to update history <b style="color:red">every sunday once in a week </b>and updates
+        coin_price_daily table
+        <br/><br/>
+        4.) file name = scheduler_cmc_daily_coin_details.py
+        <br/>
+        description = This is a scheduler file which runs <b style="color: red">every day at 8:00 am</b> and updates if there is any new coin list in coin cap market
+        <br/><br/>
+        5.) file name = scheduler_cindicator.py
+        <br/>
+        description = This file runs <b style="color: red">every day at 8:00 am</b>  and reads the all the emails of previous day and inserts
+        the data into cindicator table
+        <br/><br/>
+        6.) file name = scheduler_hacked.py
+        <br/>
+        description = This file runs <b style="color: red">every day</b> and reads the google spread sheet name hacked.com and inserts the data
+        into hackedCom table
+        <br/><br/>
+        7.) file name = scheduler_telegram.py
+        <br/>
+        description = This file runs <b style="color: red">every day</b> consumes the Api of telegram channel named as "PALMBEACHSIGNALS" and gets the data
+        which is inserted in telegram table
+    </p>
+
+</body>
+</html>
